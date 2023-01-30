@@ -1,0 +1,13 @@
+extend components/layout.pug
+block content
+  section.intro
+    .intro__imagen: img(src="../images/imagen.png")
+    .intro__contenido
+      h2 #{titulos[0]}
+      p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ratione a architecto commodi.
+        span Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      a.boton Leer Mas
+  main.contenido
+    +caja('imagen.png', titulos[1], 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ratione a architecto commodi. Iure illo beatae ipsa sint ad, quisquam possimus, itaque similique, facere cumque ipsam! Placeat quaerat aut magni!')
+    +caja('imagen.png', titulos[2], 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ratione a architecto commodi. Iure illo beatae ipsa sint ad, quisquam possimus, itaque similique, facere cumque ipsam! Placeat quaerat aut magni!')
+    +caja('imagen.png', titulos[3], 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ratione a architecto commodi. Iure illo beatae ipsa sint ad, quisquam possimus, itaque similique, facere cumque ipsam! Placeat quaerat aut magni!')
